@@ -1,0 +1,930 @@
+@use "layout";
+@use "swiper-init";
+@use "menu-mob";
+@use "animate.min";
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+header {
+    .head-desk {
+        position: static;
+        width: 100%;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        background-color: white;
+        border: 1px solid;
+        border-color: transparent transparent #c4c3c3 transparent;
+
+        img[alt="logoSoskin"] {
+            display: none;
+        }
+
+        .icons-head {
+            a {
+                padding: 0.5rem !important;
+                font-weight: bold !important;
+            }
+
+            .icons {
+                width: 22px;
+                height: 22px;
+            }
+        }
+        .parent {
+            .child {
+                position: static;
+                top: 100%;
+                right: 0;
+                z-index: 3;
+                border: 1px solid white;
+                background-color: #faf5f5;
+                width: 100%;
+                height: auto;
+                padding: 1rem;
+                line-height: 1.8rem;
+                font-size: 0.85rem;
+                font-weight: 500;
+                box-shadow: 0 0 0 3px rgba(153, 153, 153, 0.253);
+                display: block !important;
+            }
+        }
+        .parent1 {
+            .child1 {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                z-index: 3;
+                border: 1px solid white;
+                background-color: #faf5f5;
+                width: 100vw;
+                height: 50vh;
+                padding: 1rem;
+                line-height: 2rem;
+                font-size: 0.85rem;
+                font-weight: 500;
+                box-shadow: 0 0 0 3px rgba(153, 153, 153, 0.253);
+                display: none !important;
+            }
+        }
+
+        .parent1:hover {
+            .child1 {
+                display: flex !important;
+            }
+        }
+
+        .bold-font {
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+
+        .h-d {
+            height: 90%;
+        }
+
+        .h-d-m {
+            height: 90%;
+        }
+
+        .parent-tak {
+            .has-child {
+                position: absolute;
+                border: 1px solid white;
+                background-color: #faf5f5;
+                top: 100%;
+                width: 20rem;
+                font-size: 0.85rem;
+                font-weight: 500;
+                padding: 1rem;
+                line-height: 2.1rem;
+                box-shadow: 0 0 0 3px rgba(153, 153, 153, 0.253);
+                z-index: 3;
+                display: none;
+            }
+        }
+
+        .parent-tak:hover {
+            .has-child {
+                display: block;
+            }
+        }
+    }
+}
+
+header {
+    .head-mob {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        background-color: white;
+        border: 1px solid;
+        border-color: transparent transparent #c4c3c3 transparent;
+
+        .icon-menu {
+            font-size: 20px;
+        }
+
+        .imaging {
+            width: 40px;
+        }
+
+        .image-logo {
+            width: 100px;
+        }
+
+        a {
+            padding: 0 0.5rem;
+        }
+    }
+}
+
+section {
+    margin-top: 0;
+
+    .over-slider {
+        position: absolute;
+        z-index: 2;
+        bottom: 3rem;
+        left: 3rem;
+
+        a {
+            display: block;
+            margin: 0;
+            padding: 0;
+            display: block;
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            font-size: larger;
+            width: 12rem;
+            height: 2.4rem;
+            text-align: center !important;
+        }
+
+        a:hover {
+            border: 2px solid black;
+            background-color: transparent;
+            color: black;
+            font-size: larger;
+        }
+    }
+
+    .slide-height {
+        height: 60vh;
+    }
+}
+
+section {
+    .gift {
+        position: fixed;
+        top: 25rem;
+        direction: ltr;
+        left: 3rem;
+        z-index: 2;
+
+        a {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+section {
+    overflow-y: hidden;
+
+    .switch {
+        a {
+            font-weight: bold;
+            font-size: larger;
+            padding-bottom: 1.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        a:hover {
+            border: 2px solid;
+            border-color: transparent transparent rgb(65, 63, 63) transparent;
+        }
+    }
+
+    .my-card {
+        .card-header {
+            a {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .card-body {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            padding: 1rem;
+
+            p {
+                font-size: small;
+                font-weight: bold;
+            }
+
+            a {
+                font-weight: bold;
+            }
+        }
+
+        .porforoush2 {
+
+            position: absolute;
+            bottom: 44rem;
+
+            p {
+                background-color: white;
+                text-align: center;
+                width: 100%;
+                padding: 0.5rem;
+                font-size: small;
+                font-weight: bold;
+            }
+        }
+
+        .porforoush1 {
+
+            position: absolute;
+            bottom: 23.2rem;
+
+            p {
+                background-color: white;
+                text-align: center;
+                width: 100%;
+                padding: 0.5rem;
+                font-size: small;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .my-card:hover {
+        background-color: #faf5f5;
+    }
+
+    .dokmeh {
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+       padding: 1rem;
+        font-size: larger;
+    }
+
+    .dokmeh:hover {
+        border: 2px solid black;
+        background-color: transparent;
+        color: black;
+    }
+}
+
+section {
+    position: relative;
+
+    .paralex {
+        width: 100%;
+        height: 30rem;
+        border: 1px solid white;
+        background-image: url(../images/slider3.jfif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .text-section {
+        position: absolute;
+        bottom: 5rem;
+        top: auto;
+        right: 10%;
+        width: 80%;
+        border: 1px solid white;
+        background-color: white;
+        padding: 1rem;
+
+        p {
+            text-align: right;
+            font-size: small;
+            line-height: 2rem;
+        }
+    }
+}
+
+section {
+    .kadr {
+        background-color: white;
+        border: 1px solid white;
+        height: 14rem;
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        img {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: small;
+        }
+    }
+}
+
+section {
+    position: relative;
+
+    .paralex-2 {
+        width: 100%;
+        height: 30rem;
+        border: 1px solid white;
+        background-image: url(../images/attribute-bg.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .text-section {
+        position: absolute;
+        bottom: 5rem;
+        top: auto;
+        right: 10%;
+        border: 1px solid white;
+        background-color: white;
+        width: 80%;
+        padding: 1rem;
+
+        p {
+            text-align: right;
+            font-size: small;
+            line-height: 2rem;
+        }
+    }
+}
+
+section {
+    .kadr2 {
+        background-color: white;
+        border: 1px solid white;
+        height: 14rem;
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: small;
+        }
+    }
+}
+
+section {
+    .black {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border: 1px solid black;
+        background-color: black;
+
+        h4 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-size: medium;
+            font-weight: 600;
+        }
+
+        .email {
+            border: 2px solid white;
+            background-color: black;
+            width: 70%;
+            height: 3.5rem;
+            color: white;
+            padding: 1rem;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            border: 2px solid white;
+            background-color: white;
+            color: black;
+            width: 70%;
+            height: 3.5rem;
+            padding: 1rem;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        a:hover {
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+section {
+    .insta {
+        margin-top: 1rem;
+
+        .mb-10 {
+            margin-bottom: 4rem;
+        }
+
+        a {
+            img {
+                height: 10rem;
+                width: 10rem;
+            }
+
+            .paint-icon {
+                position: absolute;
+                bottom: 49rem;
+                right: 9rem;
+                color: transparent;
+                font-size: 40px;
+            }
+
+            .paint-icon1 {
+                position: absolute;
+                bottom: 38rem;
+                right: 9rem;
+                color: transparent;
+                font-size: 40px;
+            }
+
+            .paint-icon2 {
+                position: absolute;
+                bottom: 28rem;
+                right: 9rem;
+                color: transparent;
+                font-size: 40px;
+            }
+
+            .paint-icon3 {
+                position: absolute;
+                bottom: 18rem;
+                right: 9rem;
+                color: transparent;
+                font-size: 40px;
+            }
+
+            .paint-icon4 {
+                position: absolute;
+                bottom: 8rem;
+                right: 9rem;
+                color: transparent;
+                font-size: 40px;
+            }
+        }
+
+        a:hover {
+            img {
+                opacity: 0.5;
+            }
+
+            .paint-icon {
+                color: #4b4949;
+            }
+
+            .paint-icon1 {
+                color: #4b4949;
+            }
+
+            .paint-icon2 {
+                color: #4b4949;
+            }
+
+            .paint-icon3 {
+                color: #4b4949;
+            }
+
+            .paint-icon4 {
+                color: #4b4949;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 5rem;
+    border: 1px solid;
+    border-color: #c4c3c3 transparent transparent transparent;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .icon-footer {
+        font-size: 23px;
+        color: #6e6e6e;
+    }
+
+    .bold-text {
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .hr {
+        width: 100px;
+        height: 2.2px;
+        display: block;
+        background-color: black !important;
+        color: black !important;
+        text-align: center;
+    }
+
+    .text-footer {
+        font-weight: 600;
+        line-height: 1.7rem;
+    }
+
+    .justify {
+        text-align: justify;
+    }
+
+    a {
+        padding: 0;
+
+        .icon-social {
+            font-size: 40px;
+            color: #6e6e6e;
+            margin: 0.5rem;
+        }
+    }
+
+    a:hover {
+        padding: 0;
+
+        .icon-social {
+            font-size: 40px;
+            color: #000000;
+            margin: 0.5rem;
+        }
+    }
+}
+
+footer {
+    .design {
+        color: #413a3a;
+        font-size: medium;
+        font-weight: bold;
+    }
+}
+
+
+
+
+@media(min-width:786px) {
+    header {
+        position: relative;
+        .head-desk {
+            img[alt="logoSoskin"] {
+                display: inline-block;
+            }
+            a{
+                padding: 3.2rem 1rem;
+            }
+            .parent {
+                .child {
+                    position: absolute;
+                    // top: 100%;
+                    right: 0;
+                    z-index: 3;
+                    border: 1px solid white;
+                    background-color: #faf5f5;
+                    width: 100vw;
+                    height: 50vh;
+                    padding: 1rem;
+                    line-height: 1.8rem;
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                    box-shadow: 0 0 0 3px rgba(153, 153, 153, 0.253);
+                    display: none !important;
+                }
+            }
+    
+            .parent:hover {
+                .child {
+                    display: flex !important;
+                }
+            }
+        }
+       
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    section {
+        overflow-y: hidden;
+
+        .switch {
+            a {
+                font-weight: bold;
+                font-size: larger;
+                padding-bottom: 1.5rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            a:hover {
+                border: 2px solid;
+                border-color: transparent transparent rgb(65, 63, 63) transparent;
+            }
+        }
+
+        .my-card {
+            position: relative;
+            .card-header {
+                a {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .card-body {
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                padding: 1rem;
+
+                p {
+                    font-size: small;
+                    font-weight: bold;
+                }
+
+                a {
+                    font-weight: bold;
+                }
+            }
+
+            .porforoush {
+
+                position: absolute;
+                bottom: 20rem;
+
+                p {
+                    background-color: white;
+                    text-align: center;
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    font-size: small;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .my-card:hover {
+            background-color: #faf5f5;
+        }
+
+        .dokmeh {
+            display: block;
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            width: 18%;
+            height: 3.6rem;
+            padding: 1rem;
+            margin: auto;
+            font-size: larger;
+            text-align: center !important;
+        }
+
+        .dokmeh:hover {
+            border: 2px solid black;
+            background-color: transparent;
+            color: black;
+        }
+    }
+
+    section {
+        position: relative;
+
+        .paralex {
+            width: 100%;
+            height: 36rem;
+            border: 1px solid white;
+            background-image: url(../images/slider3.jfif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text-section {
+            position: absolute;
+            bottom: 8rem;
+            top: auto;
+            right: 38%;
+            width: 24%;
+            border: 1px solid white;
+            background-color: white;
+            padding: 1rem;
+
+            p {
+                text-align: right;
+                font-size: small;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    section {
+        position: relative;
+
+        .paralex-2 {
+            width: 100%;
+            height: 36rem;
+            border: 1px solid white;
+            background-image: url(../images/attribute-bg.svg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .text-section {
+            position: absolute;
+            bottom: 8rem;
+            top: auto;
+            right: 38%;
+            border: 1px solid white;
+            background-color: white;
+            width: 24%;
+            padding: 1rem;
+
+            p {
+                text-align: right;
+                font-size: small;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    section {
+        .black {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            border: 1px solid black;
+            background-color: black;
+
+            h4 {
+                color: white;
+            }
+
+            p {
+                color: white;
+                font-size: medium;
+                font-weight: 600;
+            }
+
+            .email {
+                border: 2px solid white;
+                background-color: black;
+                width: 30%;
+                height: 3.5rem;
+                color: white;
+                padding: 1rem;
+            }
+
+            a {
+                display: block;
+                text-align: center;
+                border: 2px solid white;
+                background-color: white;
+                color: black;
+                width: 10%;
+                height: 3.5rem;
+                font-size: medium;
+                font-weight: bold;
+                padding: 1rem;
+            }
+
+            a:hover {
+                border: 2px solid white;
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    section {
+        position: relative;
+
+        .insta {
+            margin-top: 2rem;
+
+            .mb-10 {
+                margin-bottom: 4rem;
+            }
+
+            a {
+                img {
+                    height: 13rem;
+                    width: 13rem;
+                }
+
+                .paint-icon {
+                    position: absolute;
+                    bottom: 9rem;
+                    right: 10%;
+                    color: transparent;
+                    font-size: 40px;
+                }
+
+                .paint-icon1 {
+                    position: absolute;
+                    bottom: 9rem;
+                    right: 30%;
+                    color: transparent;
+                    font-size: 40px;
+                }
+
+                .paint-icon2 {
+                    position: absolute;
+                    bottom: 9rem;
+                    right: 50%;
+                    color: transparent;
+                    font-size: 40px;
+                }
+
+                .paint-icon3 {
+                    position: absolute;
+                    bottom: 9rem;
+                    right: 69%;
+                    color: transparent;
+                    font-size: 40px;
+                }
+
+                .paint-icon4 {
+                    position: absolute;
+                    bottom: 9rem;
+                    right: 89%;
+                    color: transparent;
+                    font-size: 40px;
+                }
+            }
+
+            a:hover {
+                img {
+                    opacity: 0.5;
+                }
+
+                .paint-icon {
+                    color: #4b4949;
+                }
+
+                .paint-icon1 {
+                    color: #4b4949;
+                }
+
+                .paint-icon2 {
+                    color: #4b4949;
+                }
+
+                .paint-icon3 {
+                    color: #4b4949;
+                }
+
+                .paint-icon4 {
+                    color: #4b4949;
+                }
+            }
+        }
+    }
+}
